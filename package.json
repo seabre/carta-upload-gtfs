@@ -1,0 +1,10 @@
+{
+  "name": "carta-upload-gtfs",
+  "version": "1.0.0",
+  "description": "Make it easier to upload the required GTFS files.",
+  "author": "Sean Brewer",
+  "license": "ISC",
+  "dependencies": {
+    "chatt-gtfs-cleanup": "git://github.com/jden/chatt-gtfs-cleanup"
+  }
+}

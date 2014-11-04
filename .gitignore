@@ -65,3 +65,6 @@ pickle-email-*.html
 
 # Environment files that may contain sensitive data
 .powenv
+
+# Node.js specific stuff.
+node_modules
