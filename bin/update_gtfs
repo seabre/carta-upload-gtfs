@@ -7,7 +7,7 @@ UPLOADS=$APP_ROOT/public/uploads/upload
 cd $TMP_GIT_DIR &&
 git clone https://github.com/seabre/gtfs.git . &&
 cp $UPLOADS/**/$1/*.txt . &&
-chatt-gtfs-cleanup --input . --output $TMP_CLEAN_GTFS_DIR &&
+$APP_ROOT/node_modules/chatt-gtfs-cleanup/cli.js --input . --output $TMP_CLEAN_GTFS_DIR &&
 cp $TMP_CLEAN_GTFS_DIR/*.txt . &&
 git commit -a -m "Update #$1 from CARTA." &&
 git push origin master
