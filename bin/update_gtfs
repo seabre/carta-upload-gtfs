@@ -4,6 +4,9 @@ TMP_CLEAN_GTFS_DIR=`mktemp -d`
 APP_ROOT=$(cd $(dirname "$0"); pwd)/../ # Get root directory of rails app.
 UPLOADS=$APP_ROOT/public/uploads/upload
 
+git config --global user.email "someemail@example.com"
+git config --global user.name "John Doe"
+
 cd $TMP_GIT_DIR &&
 git clone https://github.com/seabre/gtfs.git . &&
 cp $UPLOADS/**/$1/*.txt . &&
