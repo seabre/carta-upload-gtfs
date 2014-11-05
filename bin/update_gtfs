@@ -8,7 +8,7 @@ git config --global user.email "someemail@example.com"
 git config --global user.name "John Doe"
 
 cd $TMP_GIT_DIR &&
-git clone https://github.com/seabre/gtfs.git . &&
+git clone $GTFS_GIT_REPO . &&
 cp $UPLOADS/**/$1/*.txt . &&
 $APP_ROOT/node_modules/chatt-gtfs-cleanup/cli.js --input . --output $TMP_CLEAN_GTFS_DIR &&
 cp $TMP_CLEAN_GTFS_DIR/*.txt . &&
