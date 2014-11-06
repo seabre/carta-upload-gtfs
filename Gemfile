@@ -20,6 +20,7 @@ gem 'passenger'
 gem 'carrierwave'
 gem 'delayed_job_active_record'
 gem 'daemons'
+gem 'foreman'
 
 group :development do
   gem 'better_errors'
