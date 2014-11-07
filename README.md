@@ -3,3 +3,6 @@
 Make it easier to upload the required GTFS files.
 
 
+# License
+
+MIT
